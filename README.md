@@ -54,9 +54,22 @@
 
 ## 📊 GitHub Stats  
 
+// GitHubStatsWidget.jsx
+// A single-file React component that reproduces dynamic GitHub stats similar to the images
+// in your README: stats, streak-like contributions total, and top languages.
+// Usage:
+// 1) Create a GitHub Personal Access Token (no write scopes needed; `read:user` and `repo` or `public_repo` are fine).
+// 2) Create a .env file with REACT_APP_GITHUB_TOKEN=your_token
+// 3) Import and render <GitHubStatsWidget /> in your app.
+// 
+// Notes:
+// - This uses the GitHub GraphQL API to fetch the user's contribution calendar total and repository language data.
+// - For large accounts you may want to page through repositories; this example fetches up to 100 owned repos.
+// - Styling uses Tailwind (class names). If you don't have Tailwind, minimal CSS is included below.
+
 import React, { useEffect, useState } from 'react';
 
-const graphqlQuery = (Arghadeepkar85) => ({
+const graphqlQuery = () => ({
   query: `query($login: String!) {
     user(login: $login) {
       name
@@ -79,10 +92,10 @@ const graphqlQuery = (Arghadeepkar85) => ({
       }
     }
   }`,
-  variables: { login: Arghadeepkar85 }
+  variables: { login: "Arghadeepkar85" }
 });
 
-export default function GitHubStatsWidget({ username = 'Arghadeepkar85' }) {
+export default function GitHubStatsWidget() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
@@ -101,7 +114,7 @@ export default function GitHubStatsWidget({ username = 'Arghadeepkar85' }) {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify(graphqlQuery(username)),
+      body: JSON.stringify(graphqlQuery()),
     })
       .then((res) => res.json())
       .then((json) => {
@@ -141,7 +154,7 @@ export default function GitHubStatsWidget({ username = 'Arghadeepkar85' }) {
         setError(err.message || 'Failed to fetch GitHub data');
         setLoading(false);
       });
-  }, [username]);
+  }, []);
 
   if (loading) return <div className="p-4">Loading GitHub stats...</div>;
   if (error) return <div className="p-4 text-red-600">Error: {error}</div>;
@@ -202,9 +215,15 @@ function LanguageBar({ name, size, total }) {
   );
 }
 
-
-
-
-
-
-✨ *"Turning ideas into reality through code & creativity"* ✨
+// Minimal fallback CSS if Tailwind isn't present
+// You can copy-paste into your CSS file if you don't use Tailwind.
+/*
+.max-w-3xl{max-width:48rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.p-4{padding:1rem}
+.mb-4{margin-bottom:1rem}
+.grid{display:grid}
+.gap-4{grid-gap:1rem}
+.rounded-2xl{border-radius:1rem}
+.shadow-md{box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+*/
