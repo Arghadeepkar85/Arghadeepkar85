@@ -24,15 +24,10 @@
 ## 🛠 Tech Stack & Tools  
 
 **Frontend**  
-💻 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) 
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white) 
+ 
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)  
 🎨 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white) 
-![Adobe XD](https://img.shields.io/badge/Adobe_XD-FF61F6?logo=adobexd&logoColor=white)  
-
-**Backend**  
-⚙️ ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node-dot-js&logoColor=white) 
-![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)  
+ 
 
 **AI / ML**  
 🤖 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) 
