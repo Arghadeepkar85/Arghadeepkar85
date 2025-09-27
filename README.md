@@ -6,8 +6,7 @@
 ## ✨ My Journey
 
 - 🧠 Strong foundation in **Python**, **C++**, **Java**, and **C programming**
-- 🎨 Enthusiastic about **UI/UX design**, using tools like **Figma, Adobe XD, Bootstrap, and Tailwind CSS**  
-- 🚀 Developing **AI-powered** solutions and working with **MERN/Django frameworks**   
+- 🚀 Developing **AI-powered** solutions
 - 💡 Interested in building **intelligent apps**, **creative interfaces**, and **interactive digital experiences**  
 
 ---  
