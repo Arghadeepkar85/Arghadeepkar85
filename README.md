@@ -23,11 +23,7 @@
 
 ## 🛠 Tech Stack & Tools  
 
-**Frontend**  
- 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)  
-🎨 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white) 
- 
+
 
 **AI / ML**  
 🤖 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) 
