@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I’m Arghadeep Kar</h1>  
-<h4 align="center">Computer Science Student • Passionate about Web Dev & AI • India 🇮🇳</h4>  
+<h4 align="center">Computer Science Student • Passionate about Web AI ML• India 🇮🇳</h4>  
 
 ---  
 
