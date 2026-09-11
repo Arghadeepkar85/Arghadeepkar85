@@ -5,7 +5,7 @@
 
 ## ✨ My Journey
 
-- 🧠 Strong foundation in **Python**, **C++**, **Java**, and **C programming**
+- 🧠 Strong foundation in **Python**, **C++** and **C programming**
 - 🚀 Developing **AI-powered** solutions
 - 💡 Interested in building **intelligent apps**, **creative interfaces**, and **interactive digital experiences**  
 
